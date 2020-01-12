@@ -22,7 +22,7 @@ var g_dictReplace = {
 	'SNG': 'sonde naso-gastrique',
 	' ss ': ' sous ',
 	'AA': 'en air ambiant',
-	'cr': 'expectorations',
+	' cr ': ' expectorations ',
 	'expect': 'expectorations',
 	'DA': 'drainage autogène',
 	'MV': 'murmure vésiculaire',
