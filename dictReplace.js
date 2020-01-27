@@ -87,7 +87,7 @@ var g_dictReplace = {
 	'modal ventil': 'modalités ventilatoires',
 	'puru': 'purulentes',
 	'pas d\'enc percu': 'pas d\'encombrement perçu',
-	'percu': 'perçu'
+	'percu': 'perçu',
 	'execution': 'exécution',
-	'Execution': 'Exécution',
+	'Execution': 'Exécution'
 }
