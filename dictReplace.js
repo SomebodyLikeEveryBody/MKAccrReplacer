@@ -81,7 +81,7 @@ var g_dictReplace = {
 	'TD': 'toux dirigée',
 	'FR': 'fréquence respiratoire',
 	'VD': 'ventilation dirigée',
-	'VS[^-]': 'ventilation spontanée',
+	'VS': 'ventilation spontanée',
 	'TP': 'toux protégée',
         'PB': 'plexus brachial',
         'PL': 'plexus lombal',
