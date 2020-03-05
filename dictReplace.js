@@ -77,7 +77,7 @@ var g_dictReplace = {
 	'PCP': 'précautions complémentaires protectrices',
 	'BAV': 'bloc atrio-ventriculaire',
         'WPM': 'travail du périmetre de marche',
-	'VS([^-]*)': 'ventilation spontanée$1',
+	'VS([^-])': 'ventilation spontanée$1',
 	' LPF': ' lombo-pelvi-fémoral',
 	'TD': 'toux dirigée',
 	'FR': 'fréquence respiratoire',
