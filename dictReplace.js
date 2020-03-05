@@ -103,6 +103,7 @@ var g_dictReplace = {
 	'CA': 'canne anglaise',
 	'CI': 'capacité inspiratoire',
 	'VR': 'volume résiduel',
+	'D([1-3])': 'degré $1',
 	'Vt': 'volume courant',
 	'CV': 'capacité vitale',
 	'RL': 'rotation latérale',
