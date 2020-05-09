@@ -4,7 +4,7 @@ var g_dictReplace = {
 	'secretions': 'sécrétions',
 	'Execution': 'Exécution',
 	'execution': 'exécution',
-	'encprox': 'encombrement proximal'
+	'encprox': 'encombrement proximal',
 	'EAMF4m': 'entretient articulaire et myofascial des 4 membres',
 	'expect': 'expectorations',
 	'/ESS11': 'équilibre statique stable sous déstabilisations intrinsèques et extrinsèques',
