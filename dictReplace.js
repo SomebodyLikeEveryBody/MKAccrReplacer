@@ -141,6 +141,7 @@ var g_dictReplace = {
 	'FP': 'femoro-patellaire',
 	'FT': 'femoro-tibial',
 	'KR': 'kinésithérapie respiratoire',
+	'RX': 'radiographie',
 	' CF': ' coxofémoral',
 	' GH': ' glénohuméral',
 	' D': ' droit',
