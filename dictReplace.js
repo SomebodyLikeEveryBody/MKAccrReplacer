@@ -17,6 +17,7 @@ var g_dictReplace = {
 	'/ESS11': 'équilibre statique stable sous déstabilisations intrinsèques et extrinsèques',
 	'/ESS10': 'équilibre statique stable sous déstabilisations intrinsèques mais pas sous déstabilisations extrinsèques',
 	'PCCCD': 'précautions complémentaires contact Clostridium Difficile',
+	'APLT+': 'APLT DC ABDL et ABDL debout',
 	'1LVOK': '1er lever effectué',
 	'ESCOK': 'escaliers exécutés de façon sécurisée',
 	'ABABP': 'attelle BABP',
