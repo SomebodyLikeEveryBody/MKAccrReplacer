@@ -13,6 +13,7 @@ var g_dictReplace = {
 	'expect': 'expectorations',
 	'ESCOKD': 'escaliers exécutés de façon sécurisée rampe a droite a la montée comme à son domicile',
 	'ESCOKG': 'escaliers exécutés de façon sécurisée rampe à gauche à la montée comme à son domicile',
+	'PADENC': 'pas d\'encombrement percu',
 	'/ESS11': 'équilibre statique stable sous déstabilisations intrinsèques et extrinsèques',
 	'/ESS10': 'équilibre statique stable sous déstabilisations intrinsèques mais pas sous déstabilisations extrinsèques',
 	'PCCCD': 'précautions complémentaires contact Clostridium Difficile',
