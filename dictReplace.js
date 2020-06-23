@@ -53,7 +53,7 @@ var g_dictReplace = {
 	'pdep': 'pas d\'encombrement perçu',
 	'EAMF': 'entretient articulaire et myofascial',
 	'TPAE': 'TP acquise et efficace',
-	'RCPP': 'rappel des consignes pro-prophylactique,
+	'RCPP': 'rappel des consignes pro-prophylactique',
 	'POST': 'postérieur',
 	'CTSB': 'cervico-thoraco-scapulo-brachial',
 	'ACFA': 'arythmie complète par fibrillation atriale',
