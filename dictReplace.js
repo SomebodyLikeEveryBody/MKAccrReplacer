@@ -3,6 +3,7 @@ var g_dictReplace = {
 	'3flo ([1-3])b~([0-9])s': 'éxécution au 3flo: $1 boules tenues environs $2 secondes',
 	' 1 secondes': ' 1 seconde',
 	' 1 boules': ' 1 boule',
+	' 1 boule tenues': ' 1 boule tenue',
 	'modal ventil': 'modalités ventilatoires',
 	'secretions': 'sécrétions',
 	'Execution': 'Exécution',
