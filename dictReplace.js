@@ -1,6 +1,8 @@
 var g_dictReplace = {
 	'pas d\'enc percu': 'pas d\'encombrement perçu',
 	'3flo ([1-3])b~([0-9])s': 'éxécution au 3flo: $1 boules tenues environs $2 secondes',
+	'3flo ([1-3])b>([0-9])s':'éxécution au 3flo: $1 boules tenues plus de $2 secondes',
+	'3flo ([1-3])b<([0-9])s':'éxécution au 3flo: $1 boules tenues moins de $2 secondes',
 	' 1 secondes': ' 1 seconde',
 	' 1 boules': ' 1 boule',
 	' 1 boule tenues': ' 1 boule tenue',
