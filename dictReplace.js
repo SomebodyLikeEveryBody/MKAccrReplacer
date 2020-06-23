@@ -1,5 +1,6 @@
 var g_dictReplace = {
 	'pas d\'enc percu': 'pas d\'encombrement perçu',
+	'3flo 1b~([0-9])s': 'éxécution au 3flo: 1 boule tenue environs $1 secondes',
 	'modal ventil': 'modalités ventilatoires',
 	'secretions': 'sécrétions',
 	'Execution': 'Exécution',
