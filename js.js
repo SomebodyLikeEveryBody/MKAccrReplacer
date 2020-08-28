@@ -1,11 +1,21 @@
-function translate(inText, dictReplace) {
-	let outText = inText;
+function translate(pInText, pDictReplace) {
 
-	for (const key in dictReplace) {
-		outText = outText.replace(new RegExp(key, 'gm'), dictReplace[key]);
+	let outText = '\n' + pInText + '\n';
+	for (const key in pDictReplace) {
+		outText = outText.replace(new RegExp(key, 'gm'), pDictReplace[key]);
 	}
 
-	return (outText)
+	return (outText.substring(1, outText.length - 1));
+}
+
+function addAZPatternToDict(pDict) {
+	for (const key in pDict) {
+		if (/^[A-Z0-9]+$/.test(key) === true) {
+			pDict[key] = '$1' + pDict[key]+ '$2';
+			pDict['([^a-zA-Z])' + key + '([^a-zA-Z])'] = pDict[key];
+			delete pDict[key];
+		}
+	}
 }
 
 $(function () {
@@ -13,6 +23,7 @@ $(function () {
 	let inEl =  $('textarea#in_text');
 	let outEl =  $('textarea#out_text');
 
+	addAZPatternToDict(g_dictReplace);
 	inEl.focus();
 	$('button#validate').click(() => {
 		outEl.val(translate(inEl.val(), g_dictReplace));
