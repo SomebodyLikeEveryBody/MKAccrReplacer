@@ -2,7 +2,7 @@ function translate(inText, dictReplace) {
 	let outText = inText;
 
 	for (const key in dictReplace) {
-		outText = outText.replace(new RegExp(key, 'g'), dictReplace[key]);
+		outText = outText.replace(new RegExp(key, 'gm'), dictReplace[key]);
 	}
 
 	return (outText)

@@ -204,4 +204,5 @@ var g_dictReplace = {
 	' GH': ' glénohuméral',
 	' D': ' droit',
 	' G': ' gauche',
+    '[^a-zA-Z]test[(^a-zA-Z)|\n]': 'POUET',
 }
