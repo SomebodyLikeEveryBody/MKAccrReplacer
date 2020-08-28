@@ -11,7 +11,7 @@ function translate(pInText, pDictReplace) {
 function addAZPatternToDict(pDict) {
 	for (const key in pDict) {
 		if (/^[A-Z0-9]+$/.test(key) === true) {
-			pDict[key] = '$1' + pDict[key]+ '$2';
+			pDict[key] = '$1' + pDict[key] + '$2';
 			pDict['([^a-zA-Z])' + key + '([^a-zA-Z])'] = pDict[key];
 			delete pDict[key];
 		}
@@ -20,8 +20,8 @@ function addAZPatternToDict(pDict) {
 
 $(function () {
 
-	let inEl =  $('textarea#in_text');
-	let outEl =  $('textarea#out_text');
+	let inEl = $('textarea#in_text');
+	let outEl = $('textarea#out_text');
 
 	addAZPatternToDict(g_dictReplace);
 	inEl.focus();

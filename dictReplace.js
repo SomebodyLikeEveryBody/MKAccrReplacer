@@ -42,7 +42,7 @@ var g_dictReplace = {
 	'EAMF4': 'entretient articulaire et myofascial des 4 membres',
 	'percu': 'perçu',
 	'_SGIE': 'sympomatologie',
-	'sp[o|O]2': 'SpO2 moyenne',
+	'sp[o|O][2|é]': 'SpO2 moyenne',
 	'RMed': 'rotation médiale',
 	'AETP': 'AET productive',
 	'puru': 'purulentes',
