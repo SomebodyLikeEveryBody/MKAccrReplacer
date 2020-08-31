@@ -35,14 +35,14 @@ section#in_form
 
 textarea#in_text
 {
-	width: calc(100% - 125px);
+	width: calc(89%);
 	margin: 0px;
 	height: calc (100% - 3px);
 }
 
 button#validate
 {
-	width: 100px;
+	width: 10%;
 	height: calc (100% - 3px);
 }
 
