@@ -1,5 +1,11 @@
+html
+{
+    height: 100%;
+}
+
 body
 {
+    height: calc(100% - 20px);
 	margin: 0px;
 	padding: 10px;
 	background-color: #c6d4fa;
@@ -23,6 +29,7 @@ section#in_form
 {
 	display: flex;
 	justify-content: space-between;
+    height: 25%;
 }
 
 
@@ -30,13 +37,13 @@ textarea#in_text
 {
 	width: calc(100% - 125px);
 	margin: 0px;
-	height:200px;
+	height: calc (100% - 3px);
 }
 
 button#validate
 {
 	width: 100px;
-	height: 215px;
+	height: calc (100% - 3px);
 }
 
 textarea#out_text
@@ -44,10 +51,20 @@ textarea#out_text
 	margin: 0px;
 	margin-top: 5px;
 	width: calc(100% - 15px);
-	height: 200px;
+    height: 25%;
 }
 
 button#focus_looper
 {
 	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+textarea#helper
+{
+    width: calc(100% - 15px);
+	height: calc(50% - 85px);
+	border: grey 3px solid;
+	background-color: #e8eaff;
+	opacity: 0.5;
 }
