@@ -12,7 +12,7 @@ function addAZPatternToDict(pDict) {
 	for (const key in pDict) {
 		if (/^[A-Z0-9]+$/.test(key) === true) {
 			pDict[key] = '$1' + pDict[key] + '$2';
-			pDict['([^a-zA-Z])' + key + '([^a-zA-Z])'] = pDict[key];
+			pDict['([^A-Z])' + key + '([^A-Z])'] = pDict[key];
 			delete pDict[key];
 		}
 	}
