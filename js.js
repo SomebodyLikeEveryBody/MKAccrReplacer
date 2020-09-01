@@ -40,6 +40,19 @@ function getKeywordsMatchingWith(pWord, pWords) {
 	return pWords.filter((word) => (word.includes(pWord)));
 }
 
+function getMatchingDictToStr(pLastInputWord, pAcronyms) {
+	let retStr = '';
+	let matchingDict = getKeywordsMatchingWith(pLastInputWord, pAcronyms);
+
+	for (accronym of matchingDict) {
+		retStr += accronym + ' -- [POUET] \n';
+		//remplacer le pouet par la valeur du dict sachant qu'il y a la galere de AZ
+	}
+
+
+	return retStr;
+}
+
 $(function () {
 
 	let inEl = $('textarea#in_text');
@@ -69,7 +82,7 @@ $(function () {
 		let lastInputWord = getLastWordFromInText();
 
 		if (lastInputWord !== '') {
-			$('textarea#helper').val(getKeywordsMatchingWith(lastInputWord, acronyms).join('\n'));
+			$('textarea#helper').val(getMatchingDictToStr(lastInputWord, acronyms));
 		} else {
 			$('textarea#helper').val(acronyms.join('\n'));
 		}
