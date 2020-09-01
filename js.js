@@ -20,7 +20,7 @@ function addAZPatternToDict(pDict) {
 }
 
 function getLastWordFromInText() {
-	let textContent = $('textarea#in_text').val().replaceAll('\n', ' ');
+	let textContent = $('textarea#in_text').val().replace   (/\n/g, ' ');
 	let lastWord = textContent.split(' ').pop();
 
 	return (lastWord);
