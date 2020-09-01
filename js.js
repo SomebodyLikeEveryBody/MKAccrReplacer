@@ -46,6 +46,7 @@ $(function () {
 	let outEl = $('textarea#out_text');
 	let acronyms = getAcronymsFromDict(g_dictReplace);
 
+    $('textarea#helper').hide(0);
 	addAZPatternToDict(g_dictReplace);
 	getKeywordsMatchingWith('RV', acronyms);
 
@@ -59,6 +60,11 @@ $(function () {
 		inEl.focus();
 	});
 
+
+	$('button#focus_looper').click(() => {
+        $('textarea#helper').fadeToggle(100);
+    });
+
 	$('textarea#in_text').keyup(() => {
 		let lastInputWord = getLastWordFromInText();
 
@@ -67,7 +73,6 @@ $(function () {
 		} else {
 			$('textarea#helper').val(acronyms.join('\n'));
 		}
-		
 	});
 
 	inEl.focus(() => {
