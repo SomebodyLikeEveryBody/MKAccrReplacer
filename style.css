@@ -35,7 +35,7 @@ section#in_form
 
 textarea#in_text
 {
-	width: calc(89%);
+	width: calc(88%);
 	margin: 0px;
 	height: calc (100% - 3px);
 }
