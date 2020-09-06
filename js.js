@@ -5,7 +5,9 @@ function translate(pInText, pDictReplace) {
 		outText = outText.replace(new RegExp(key, 'gm'), pDictReplace[key]);
 	}
 
-	return (outText.substring(1, outText.length - 1));
+	outText = outText.substring(1, outText.length - 1);
+	outText = outText.replace(new RegExp('\.([A-Z]+)', 'g'), '$1');
+	return (outText);
 }
 
 function addAZPatternToDict(pDict) {
@@ -13,7 +15,7 @@ function addAZPatternToDict(pDict) {
 	for (const key in pDict) {
 		if (/^[A-Z0-9]+$/.test(key) === true) {
 			pDict[key] = '$1' + pDict[key] + '$2';
-			pDict['([^A-Z])' + key + '([^A-Z])'] = pDict[key];
+			pDict['([^A-Z\.])' + key + '([^A-Z])'] = pDict[key];
 			delete pDict[key];
 		}
 	}
