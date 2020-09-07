@@ -10,7 +10,7 @@ var g_dictReplace = {
 	' 1 boules': ' 1 boule',
 	' 1 boule tenues': ' 1 boule tenue',
 	' 1 mètres': ' 1 mètre',
-	'/([0-9]{1,2})L': 'à $1L d\'O2 / min',
+	'/([0-9]{1,2})l': 'à $1L d\'O2 / min',
 	'R/([0-9]{1,2})/([0-9]{1,2})': '(réglages machine pour le drainage: AI $1cmH2O / PEP $2cmH2O)',
 	'ARTH/([0-9]+)/([-]{0,1}[0-9]+)': 'ARTH, flexion réglée à $1 degrés, extension réglée à $2 degrés',
 	'secretions': 'sécrétions',
