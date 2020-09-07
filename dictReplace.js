@@ -12,7 +12,7 @@ var g_dictReplace = {
 	' 1 mètres': ' 1 mètre',
 	'/([0-9]{1,2})L': 'à $1L d\'O2 / min',
 	'R/([0-9]{1,2})/([0-9]{1,2})': '(réglages machine pour le drainage: AI $1cmH2O / PEP $2cmH2O)',
-	'ARTH/([0-9]+)/([-]{0,1}[0-9]+)': 'ARTH, flexion réglée à $1 degrés, extension réglé à $2 degrés',
+	'ARTH/([0-9]+)/([-]{0,1}[0-9]+)': 'ARTH, flexion réglée à $1 degrés, extension réglée à $2 degrés',
 	'secretions': 'sécrétions',
 	'Execution': 'Exécution',
 	'execution': 'exécution',
