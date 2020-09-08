@@ -1,6 +1,6 @@
 function translate(pInText, pDictReplace) {
-
 	let outText = '\n' + pInText + '\n';
+
 	for (const key in pDictReplace) {
 		outText = outText.replace(new RegExp(key, 'gm'), pDictReplace[key]);
 	}
@@ -11,7 +11,6 @@ function translate(pInText, pDictReplace) {
 }
 
 function addAZPatternToDict(pDict) {
-
 	for (const key in pDict) {
 		if (/^[A-Z0-9]+$/.test(key) === true) {
 			pDict[key] = '$1' + pDict[key] + '$2';
