@@ -76,7 +76,7 @@ var g_dictReplace = {
 	'ANTe': 'antérieur',
 	'ABDL': 'assis bord de lit',
 	'CATB': 'cure t\'antibiotiques',
-	'bemv': 'bonne exécution des modalités ventilatoires', 
+	'bemv': 'bonne exécution des modalités ventilatoires',
 	'EAMF': 'entretient articulaire et myofascial',
 	'TPAE': 'TP acquise et efficace',
 	'TPAN': 'TP acquise mais non efficace',

@@ -6,7 +6,7 @@ function translate(pInText, pDictReplace) {
 	}
 
 	outText = outText.substring(1, outText.length - 1);
-	outText = outText.replace(new RegExp('\.([A-Z]+)', 'g'), '$1');
+	outText = outText.replace(new RegExp('[\.]([A-Z]+)', 'gm'), '$1');
 	return (outText);
 }
 
