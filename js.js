@@ -62,7 +62,6 @@ $(function () {
 
 	$('textarea#helper').hide(0);
 	addAZPatternToDict(g_dictReplace);
-	getKeywordsMatchingWith('RV', acronyms);
 
 	inEl.focus();
 	$('button#validate').click(() => {
