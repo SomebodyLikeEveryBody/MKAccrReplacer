@@ -202,7 +202,7 @@ var g_dictReplace = {
 	'SN': 'sonde nasale d\'O2',
 	'en AA': 'en air ambiant',
 	'AA': 'amplitudes articulaires',
-    'EN': 'sur l\'échelle numérique',
+    'EN': 'sur l\'échelle numérique simple',
 	'/CR': 'expectorations',
 	'DA': 'drainage autogène',
 	'TA': 'tension artérielle',
