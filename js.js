@@ -10,6 +10,16 @@ function translate(pInText, pDictReplace) {
 	return (outText);
 }
 
+function correct(pInText, pDictCorrect) {
+	let outText = pInText;
+
+	for (const key in pDictCorrect) {
+		outText = outText.replace(new RegExp(key, 'g'), pDictCorrect[key]);
+	}
+
+	return (outText);
+}
+
 function addAZPatternToDict(pDict) {
 	for (const key in pDict) {
 		if (/^[A-Z0-9]+$/.test(key) === true) {
@@ -65,7 +75,7 @@ $(function () {
 
 	inEl.focus();
 	$('button#validate').click(() => {
-		outEl.val(translate(inEl.val(), g_dictReplace));
+		outEl.val(correct(translate(inEl.val(), g_dictReplace), g_dictCorrect));
 		outEl.select();
 	});
 

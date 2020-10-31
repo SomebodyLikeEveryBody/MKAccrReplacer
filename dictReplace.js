@@ -147,6 +147,10 @@ var g_dictReplace = {
 	'/ESA': 'équilibre statique assis',
 	'/ETP': 'explication de la TP',
 	'/PSE': '/PS élargi',
+	'/DEGOK': 'déglutition efficace',
+	'/DEG': 'déglutition',
+	'/DEG': 'déglutition',
+	'/DEG': 'déglutition',
 	'PSE': 'psycho-socio-économique',
 	'/PS([0-9]+)': '/PS large d\'environs $1cm',
 	'TVP': 'thrombose veineuse profonde',
@@ -275,6 +279,9 @@ var g_dictReplace = {
 	'/F': 'flexion',
 	'/E': 'extension',
 	'/R': 'rotation',
+};
+
+var g_dictCorrect = {
 	'membre supérieurs':'membres supérieurs',
 	' 1 secondes': ' 1 seconde',
 	' 1 boules': ' 1 boule',
@@ -285,4 +292,5 @@ var g_dictReplace = {
 	'secretions': 'sécrétions',
 	'Execution': 'Exécution',
 	'execution': 'exécution',
-}
+	'deglutition': 'déglutition',
+};
