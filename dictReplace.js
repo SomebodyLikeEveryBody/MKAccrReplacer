@@ -86,7 +86,7 @@ var g_dictReplace = {
 	'CATB': 'cure t\'antibiotiques',
 	'PPSE': 'problématique psycho-socio-économique',
 	'CTCP': 'complexe tricipito-calcanéo-plantaire',
-	'tbemv': 'très bemv',
+	'TBEMV': 'très bemv',
 	'NEMV': 'pas d\'exécution des modalités ventilatoires',
 	'EMVS': 'exécution des modalités ventilatoires somaire',
 	'BEMV': 'bonne exécution des modalités ventilatoires',
