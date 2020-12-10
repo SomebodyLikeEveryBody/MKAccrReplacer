@@ -28,7 +28,7 @@ var g_dictReplace = {
 	'ESCOKG': 'escaliers exécutés de façon sécurisée rampe à gauche à la montée comme à son domicile',
 	'EMODAV': 'exécution des MODAV',
 	'KPPPE': 'kinésithérapie respiratoire pré, per et post-extubation',
-	'PADENC': 'pas d\'encombrement percu',
+	'PADENC': 'pas d\'encombrement perçu',
 	'(/ES[BUA])00': '$1 instable sous déstabilisations intrinsèques et extrinsèques',
 	'(/ES[BUA])10': '$1 stable sous déstabilisations intrinsèques mais pas sous déstabilisations extrinsèques',
 	'(/ES[BUA])11': '$1 stable sous déstabilisations intrinsèques et extrinsèques',
