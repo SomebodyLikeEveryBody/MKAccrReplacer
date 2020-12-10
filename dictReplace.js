@@ -127,7 +127,7 @@ var g_dictReplace = {
 	'MOB': 'mobilisation',
 	'AAE': 'attelle anti-équin',
 	'AEM': 'auto-exercices moteurs',
-	'EMV ': 'exécution des modalités ventilatoires',
+	'EMV': 'exécution des modalités ventilatoires',
 	'AFE': 'accélération du flux expiratoire',
 	'ROS': 'réponse aux ordres simples',
 	'ROT': 'réflexes ostéo-tendineux',
