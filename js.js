@@ -64,11 +64,26 @@ function getMatchingDictToStr(pLastInputWord, pAcronyms) {
 	return retStr;
 }
 
+function dictReplace2KeywordList(pDict) {
+	retArray = [];
+
+	for (let key in pDict) {
+		retArray.push({
+			keyword: key,
+			tags: pDict[key]
+		});
+	}
+
+	return retArray;
+}
+
 $(function () {
 
 	let inEl = $('textarea#in_text');
 	let outEl = $('textarea#out_text');
 	let acronyms = getAcronymsFromDict(g_dictReplace);
+
+	let autoCompleter = new AutoCompleter($('textarea#in_text'), dictReplace2KeywordList(g_dictReplace));
 
 	$('textarea#helper').hide(0);
 	addAZPatternToDict(g_dictReplace);
