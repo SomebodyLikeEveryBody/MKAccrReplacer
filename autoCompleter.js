@@ -351,6 +351,7 @@ function ClickAndKeyListener(pInputScreen) {
                         }
                         
                         this.inputScreen.autoCompletionWidget.hide();
+                        this.inputScreen.autoCompletionWidget.isVisible = false;
                         e.preventDefault();
                     }
 
@@ -361,6 +362,11 @@ function ClickAndKeyListener(pInputScreen) {
                 } else if (e.which === this.UP_KEY) {
                     this.inputScreen.autoCompletionWidget.selectPreviousKeyword();
                     e.preventDefault();
+                } else if (e.which === this.SPACE_KEY) {
+                    if (this.inputScreen.autoCompletionWidget.isVisible === true) {
+                        this.inputScreen.autoCompletionWidget.hide();
+                        this.inputScreen.autoCompletionWidget.isVisible = false;
+                    }
                 }
             }
         });
