@@ -195,7 +195,7 @@ var g_dictReplace = {
 	'OAP': 'oedeme aigu du poumon',
 	'/FSD': 'fléchisseur superficiel des doigts',
 	'/FPD': ' fléchisseur profond des doigts',
-	'::C': ' correct',
+	'::C': 'correct',
 	'::T': 'transfert',
 	'/RCS':'rachis cervical supérieur',
 	'/RCI':'rachis cervical inférieur',
