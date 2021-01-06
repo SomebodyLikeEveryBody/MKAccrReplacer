@@ -196,7 +196,7 @@ var g_dictReplace = {
 	'/FSD': 'fléchisseur superficiel des doigts',
 	'/FPD': ' fléchisseur profond des doigts',
 	'::C': ' correct',
-	'/T': 'transfert',
+	'::T': 'transfert',
 	'/RCS':'rachis cervical supérieur',
 	'/RCI':'rachis cervical inférieur',
 	'PHA': 'probable HA',
