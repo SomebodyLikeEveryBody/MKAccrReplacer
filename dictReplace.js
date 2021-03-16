@@ -15,7 +15,7 @@ var g_dictReplace = {
 	'/EDS1100': 'équilibre dynamique précaire, marches avant et latérale possibles mais marches arrière et changements de direction non sécurisés',
 	'/EDS1110': 'équilibre dynamique correct, marches avant, latérale et arrière possibles mais changements de direction instables',
 	'/EDS1111': 'équilibre dynamique stable, marches avant, latérale, arrière et changements de direction sécurisés',
-	'MRC/D/([0-9]{1,2})/G/([0-9]{1,2})/T/([0-9]{1,2})': 'score sur l\'échelle .MRC (Medical Research Council): \n- $1 à droite\n- $2 à gauche /n==> Total de $3',
+	'MRC/([0-9]{1,2})/([0-9]{1,2})/([0-9]{1,2})': 'score sur l\'échelle .MRC (Medical Research Council): \n- $1 à droite\n- $2 à gauche \n==> Total de $3',
 	//'MRC/D/([0-5])/([0-5])/([0-5])/([0-5])/([0-5])/([0-5])/G/([0-5])/([0-5])/([0-5])/([0-5])/([0-5])/([0-5]+)/TD/([0-9]+)/TG/([0-9]+)/T/([0-9]+)': '',
 	'encproxA': 'encprox audible',
 	'encprox': 'encombrement proximal',
