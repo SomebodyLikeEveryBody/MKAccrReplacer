@@ -333,6 +333,7 @@ var g_dictReplace = {
 	'TA': 'tension artérielle',
 	'MV': 'murmure vésiculaire',
 	'AT': 'aide technique',
+	'LP': 'lève-personne',
 	'AR': 'allers-retours',
 	'FE': 'fixateur externe',
 	'MI': 'membre inférieur',
