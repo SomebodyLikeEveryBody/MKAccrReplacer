@@ -142,6 +142,7 @@ var g_dictReplace = {
 	'RACO2': 'raccord à oxygène',
 	'FAUD': 'fauteuil qui suit derrière',
 	'VSAI': 'en mode VS-AI-PEP',
+	'KRT': 'ventilation dirigée, kinésithérapie respiratoire de drainage et aide à la toux',
 	'/OVVE': 'optimisation ventilatoire compte tenu de l\'objectif d\'extubation',
 	'/TDEG': 'troubles de la déglutition',
 	'TMBN': 'TMB non acquis',
