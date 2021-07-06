@@ -68,10 +68,12 @@ function dictReplace2KeywordList(pDict) {
 	retArray = [];
 
 	for (let key in pDict) {
-		retArray.push({
-			keyword: key,
-			tags: pDict[key]
-		});
+		if (!(key.includes('['))) {
+			retArray.push({
+				keyword: key,
+				tags: pDict[key]
+			});
+		}
 	}
 
 	return retArray;
