@@ -9,7 +9,7 @@ var g_dictReplace = {
 	'(Wexp[p|r]{0,1})([0-9]+)': '$1, temps expiratoire maximal de $2 secondes',
 	'/([0-9]{1,2})L': 'à $1L d\'O2 / min',
         'FC([0-9]+)': 'fréquence cardiaque à $1bpm',
-        'EN([0-9]+)': '$1/10 sur l\'échelle numérique simple',
+        'EN([0-9]+)': 'à $1/10 sur l\'échelle numérique simple',
 	'RD/([0-9]{1,2})/([0-9]{1,2})': '(réglages machine utilisés pour le drainage: AI $1cmH2O / PEP $2cmH2O)',
 	'R/([0-9]{1,2})/([0-9]{1,2})': '(réglages machine utilisés: AI $1cmH2O / PEP $2cmH2O)',
 	'ARTH/([0-9]+)/([-]{0,1}[0-9]+)': 'ARTH (réglages: flexion à $1 degrés, extension à $2 degrés)',
