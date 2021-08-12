@@ -83,7 +83,7 @@ var g_dictReplace = {
 	'WRVMQ': 'WRVM du quadriceps',
 	'RVTPC': 'RVTP correct',
 	'RVTPR':'RVTP réduit',
-	'EAMF4': 'entretient articulaire et myofascial des 4 membres',
+	'EAMF4': 'entretien articulaire et myofascial des 4 membres',
 	'WRMG4': 'travail de RMG4',
 	'percu': 'perçu',
 	'Wexpp': 'Wexp  via bocal de Plent',
