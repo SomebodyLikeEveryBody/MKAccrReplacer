@@ -184,8 +184,8 @@ var g_dictReplace = {
 	'SPV': 'sur le plan ventilatoire',
 	'MSPE': 'mieux sur le plan de l\'encombrement',
 	'SPE': 'sur le plan de l\'encombrement',
-	'MON': 'mise en place de l'oxymétrie nocturne pour la nuit => récupération des résultats demain matin par le kiné',
-        'RON': 'récupération des données de tendance de l'oxymétrie nocturne, mise en forme / impression et mise à disposition du médecin',
+	'MON': 'mise en place de l\'oxymétrie nocturne pour la nuit => récupération des résultats demain matin par le kiné',
+        'RON': 'récupération des données de tendance de l\'oxymétrie nocturne, mise en forme / impression et mise à disposition du médecin',
 	'FAV': 'fistule artério-veineuse',
 	'SCA': 'syndrome coronarien aigu',
 	'SPL': 'sur le plan locomoteur',
@@ -255,9 +255,9 @@ var g_dictReplace = {
 	'AAE': 'attelle anti-équin',
 	'AEM': 'auto-exercices moteurs',
 	'MSPD': 'sur le plan de la douleur',
-        'MSPS': 'sur le plan du sommeil'
+        'MSPS': 'sur le plan du sommeil',
 	'SPD': 'sur le plan de la douleur',
-        'SPS': 'sur le plan du sommeil'
+        'SPS': 'sur le plan du sommeil',
 	'EMV': 'exécution des modalités ventilatoires',
 	'ESM': 'évaluation subjective manuelle',
 	'AFE': 'accélération du flux expiratoire',
