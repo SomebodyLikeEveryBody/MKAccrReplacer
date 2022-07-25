@@ -35,7 +35,7 @@ section#in_form
 
 textarea#in_text
 {
-	width: calc(89%);
+	width: calc(100%);
 	margin: 0px;
 	height: calc (100% - 3px);
 }
@@ -51,7 +51,7 @@ textarea#out_text
 	margin: 0px;
 	margin-top: 5px;
 	width: calc(100% - 15px);
-    height: 25%;
+    height: 50%;
 }
 
 button#focus_looper
@@ -63,7 +63,7 @@ button#focus_looper
 textarea#helper
 {
     width: calc(100% - 15px);
-	height: calc(50% - 85px);
+	height: calc(25% - 85px);
 	border: grey 3px solid;
 	background-color: #e8eaff;
 	opacity: 0.5;

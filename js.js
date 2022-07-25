@@ -79,43 +79,51 @@ function dictReplace2KeywordList(pDict) {
 	return retArray;
 }
 
-$(function () {
-
-	let inEl = $('textarea#in_text');
-	let outEl = $('textarea#out_text');
-	let acronyms = getAcronymsFromDict(g_dictReplace);
-
-	let autoCompleter = new AutoCompleter($('textarea#in_text'), dictReplace2KeywordList(g_dictReplace));
-
-	$('textarea#helper').hide(0);
-	addAZPatternToDict(g_dictReplace);
-
-	inEl.focus();
-	$('button#validate').click(() => {
-		outEl.val(correct(translate(inEl.val(), g_dictReplace), g_dictCorrect));
-		outEl.select();
-	});
-
-	$('button#focus_looper').focus(() => {
-		inEl.focus();
-	});
-
-
-	$('button#focus_looper').click(() => {
-		$('textarea#helper').fadeToggle(100);
-	});
-
-	$('textarea#in_text').keyup(() => {
+function bindEvents(pInEl, pOutEl, pHelperEl, pLooperEl, pAcronyms) {
+	pInEl.keyup(() => {
+		//Helper screen management
 		let lastInputWord = getLastWordFromInText();
 
 		if (lastInputWord !== '') {
-			$('textarea#helper').val(getMatchingDictToStr(lastInputWord, acronyms));
+			pHelperEl.val(getMatchingDictToStr(lastInputWord, pAcronyms));
 		} else {
-			$('textarea#helper').val(acronyms.join('\n'));
+			pHelperEl.val(pAcronyms.join('\n'));
 		}
+
+		// translate and scroll down outEl screen
+		pOutEl.val(correct(translate(pInEl.val(), g_dictReplace), g_dictCorrect));
+		pOutEl[0].scrollTop = pOutEl[0].scrollHeight;
 	});
 
-	inEl.focus(() => {
-		inEl.select();
+	pLooperEl.focus(() => {
+		pInEl.focus();
 	});
+
+	pLooperEl.click(() => {
+		pHelperEl.fadeToggle(100);
+	});
+
+	pInEl.focus(() => {
+		pInEl.select();
+	});
+
+	pOutEl.focus(() => {
+		pOutEl.select();
+	});
+}
+
+$(function () {
+
+	const inEl = $('textarea#in_text');
+	const outEl = $('textarea#out_text');
+	const helperEl = $('textarea#helper');
+	const looperEl = $('button#focus_looper');
+	const acronyms = getAcronymsFromDict(g_dictReplace);
+
+	let autoCompleter = new AutoCompleter(inEl, dictReplace2KeywordList(g_dictReplace));
+
+	helperEl.hide(0);
+	addAZPatternToDict(g_dictReplace);
+	inEl.focus();
+	bindEvents(inEl, outEl, helperEl, looperEl, acronyms);
 });
