@@ -425,6 +425,7 @@ var g_dictReplace = {
 	'THB': 'taux d\'hémoglobine',
 	'FHA': 'friction avec solution hydro-alcoolique',
 	'EEG': 'électro-encéphalogramme',
+	'EPS': 'en post-séance',
 	'TSg': 'transfusion sanguine',
 	'PCA': 'précautions complémentaires air',
 	'MAD': 'mise à disposition',
