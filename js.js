@@ -89,12 +89,15 @@ function bindEvents(pInEl, pOutEl, pHelperEl, pLooperEl, pAcronyms) {
 		} else {
 			pHelperEl.val(pAcronyms.join('\n'));
 		}
-
+	});
+	
+	//pInEl.keyup(() => {
+	pInEl.bind('input propertychange', function() {
 		// translate and scroll down outEl screen
 		pOutEl.val(correct(translate(pInEl.val(), g_dictReplace), g_dictCorrect));
-		pOutEl[0].scrollTop = pOutEl[0].scrollHeight;
+		pOutEl[0].scrollTop = pOutEl[0].scrollHeight;	
 	});
-
+	
 	pLooperEl.focus(() => {
 		pInEl.focus();
 	});
