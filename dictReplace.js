@@ -361,6 +361,8 @@ var g_dictReplace = {
 	'/FSD': 'fléchisseur superficiel des doigts',
 	'/FPD': ' fléchisseur profond des doigts',
 	'::C': 'correct',
+	'::R': 'réceptif',
+	'::Re': 'réceptive',
 	'::P': 'précaire',
 	'::T': 'transfert',
 	'/RCS':'rachis cervical supérieur',
